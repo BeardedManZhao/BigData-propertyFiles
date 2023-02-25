@@ -1,0 +1,6 @@
+<configuration>
+	<property>
+		<name>dfs.secondary.http-address</name>
+		<value>liming04:9686</value>
+	</property>
+</configuration>

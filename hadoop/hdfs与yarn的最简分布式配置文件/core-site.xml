@@ -1,0 +1,14 @@
+<configuration>
+	<property>
+		<name>fs.defaultFS</name>
+		<value>liming04</value>
+	</property>
+	<property>
+		<name>hadoop.temp.dir</name>
+		<value>/liming_zhao/hadoop/hadoop_temp_dir</value>
+	</property>
+	<property>
+		<name>hadoop.httpstaticuser.name</name>
+		<value>root</value>
+	</property>
+</configuration>
