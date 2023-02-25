@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
-<!--
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="configuration.xsl"?><!--
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
@@ -17,165 +15,165 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-	<!-- 指定secondaryNameNode的地址 -->
-	<property>
-		<name>dfs.namenode.secondary.http-address</name>
-		<value>192.168.186.140:50090</value>
-	</property>
+    <!-- 指定secondaryNameNode的地址 -->
+    <property>
+        <name>dfs.namenode.secondary.http-address</name>
+        <value>192.168.186.140:50090</value>
+    </property>
 
-	<property>
-		<name>dfs.datanode.data.dir</name>
-		<value>
-			[DISK]file://${hadoop.tmp.dir}/datanode/disk,
-			[ARCHIVE]file://${hadoop.tmp.dir}/datanode/archive,
-			[SSD]file://${hadoop.tmp.dir}/datanode/SSD,
-			[RAM_DISK]file://${hadoop.tmp.dir}/datanode/RAM
-		</value>
-	</property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>
+            [DISK]file://${hadoop.tmp.dir}/datanode/disk,
+            [ARCHIVE]file://${hadoop.tmp.dir}/datanode/archive,
+            [SSD]file://${hadoop.tmp.dir}/datanode/SSD,
+            [RAM_DISK]file://${hadoop.tmp.dir}/datanode/RAM
+        </value>
+    </property>
 
-	<!-- 配置ram存储策略开启状态  -->
-	<property>
-		<name>dfs.storage.policy.enabled</name>
-		<value>true</value>
-	</property>
+    <!-- 配置ram存储策略开启状态  -->
+    <property>
+        <name>dfs.storage.policy.enabled</name>
+        <value>true</value>
+    </property>
 
-	<!-- 配置ram存储数据节点的最大缓存量，单位字节B  -->
-	<property>
-		<name>dfs.datanode.max.locked.memory</name>
-		<value>1024</value>
-	</property>
+    <!-- 配置ram存储数据节点的最大缓存量，单位字节B  -->
+    <property>
+        <name>dfs.datanode.max.locked.memory</name>
+        <value>1024</value>
+    </property>
 
 
-	<property>
-		<name>dfs.client.block.write.replace-datanode-on-failure.policy</name>
-		<value>NEVER</value>
-	</property>
+    <property>
+        <name>dfs.client.block.write.replace-datanode-on-failure.policy</name>
+        <value>NEVER</value>
+    </property>
 
-	<property>
-		<name>dfs.replication</name>
-		<value>1</value>
-	</property>
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
 
-	<property>
-		<name>dfs.permissions.enabled</name>
-		<value>false</value>
-	</property>
+    <property>
+        <name>dfs.permissions.enabled</name>
+        <value>false</value>
+    </property>
 
-	<property>
-		<name>dfs.support.append</name>
-		<value>true</value>
-	</property>
+    <property>
+        <name>dfs.support.append</name>
+        <value>true</value>
+    </property>
 
-	<property>
-		<name>dfs.client.block.write.replace-datanode-on-failure.enable</name>
-		<value>true</value>
-	</property>
+    <property>
+        <name>dfs.client.block.write.replace-datanode-on-failure.enable</name>
+        <value>true</value>
+    </property>
 
-	<property>
-		<name>dfs.client.block.write.replace-datanode-on-failure.policy</name>
-		<value>NEVER</value>
-	</property>
+    <property>
+        <name>dfs.client.block.write.replace-datanode-on-failure.policy</name>
+        <value>NEVER</value>
+    </property>
 
-	<!-- 打开短路本地读取功能 -->
-	<property>
-		<name>dfs.client.read.shortcircuit</name>
-		<value>true</value>
-	</property>
+    <!-- 打开短路本地读取功能 -->
+    <property>
+        <name>dfs.client.read.shortcircuit</name>
+        <value>true</value>
+    </property>
 
-	<!-- 设置短路读取需要的进程沟通空间 -->
-	<property>
-		<name>dfs.domain.socket.path</name>
-		<value>/liming_zhao/hadoop/sokect_path/dn_sokect</value>
-	</property>
+    <!-- 设置短路读取需要的进程沟通空间 -->
+    <property>
+        <name>dfs.domain.socket.path</name>
+        <value>/liming_zhao/hadoop/sokect_path/dn_sokect</value>
+    </property>
 
-	<!-- 设置退役节点列表 -->
-	<property>
-		<name>dfs.hosts.exclude</name>
-		<value>/liming_zhao/hadoop/END_HOSTS</value>
-	</property>
+    <!-- 设置退役节点列表 -->
+    <property>
+        <name>dfs.hosts.exclude</name>
+        <value>/liming_zhao/hadoop/END_HOSTS</value>
+    </property>
 
-	<!-- =============================================== HA 配置 ============================================ -->
-	<!--指定hdfs的nameservice，需要和core-site.xml中的保持一致 -->
-	<property>
-		<name>dfs.nameservices</name>
-		<value>mycluster</value>
-	</property>
-	
-	<!-- mycluster下面有两个NameNode-->
-	<property>
-		<name>dfs.ha.namenodes.mycluster</name>
-		<value>liming_zhao01,liming_zhao02</value>
-	</property>
+    <!-- =============================================== HA 配置 ============================================ -->
+    <!--指定hdfs的nameservice，需要和core-site.xml中的保持一致 -->
+    <property>
+        <name>dfs.nameservices</name>
+        <value>mycluster</value>
+    </property>
 
-	<!-- nn1的RPC通信地址 -->
-	<property>
-		<name>dfs.namenode.rpc-address.mycluster.liming_zhao01</name>
-		<value>192.168.186.140:8020</value>
-	</property>
+    <!-- mycluster下面有两个NameNode-->
+    <property>
+        <name>dfs.ha.namenodes.mycluster</name>
+        <value>liming_zhao01,liming_zhao02</value>
+    </property>
 
-	<!-- nn1的http通信地址 -->
-	<property>
-		<name>dfs.namenode.http-address.mycluster.liming_zhao01</name>
-		<value>192.168.186.140:9870</value>
-	</property>
+    <!-- nn1的RPC通信地址 -->
+    <property>
+        <name>dfs.namenode.rpc-address.mycluster.liming_zhao01</name>
+        <value>192.168.186.140:8020</value>
+    </property>
 
-	<!-- nn2的RPC通信地址 -->
-	<property>
-		<name>dfs.namenode.rpc-address.mycluster.liming_zhao02</name>
-		<value>192.168.186.150:8020</value>
-	</property>
-	
-	<!-- nn2的http通信地址 -->
-	<property>
-		<name>dfs.namenode.http-address.mycluster.liming_zhao02</name>
-		<value>192.168.186.150:9870</value>
-	</property>
+    <!-- nn1的http通信地址 -->
+    <property>
+        <name>dfs.namenode.http-address.mycluster.liming_zhao01</name>
+        <value>192.168.186.140:9870</value>
+    </property>
 
-	<!-- 指定NameNode的edits元数据在JournalNode上的存放位置 -->
-	<property>
-		<name>dfs.namenode.shared.edits.dir</name>
-		<value>qjournal://192.168.186.140:8485;192.168.186.150:8485;/mycluster</value>
-	</property>
-	
-	<!-- 指定JournalNode在本地磁盘存放数据的位置 -->
-	<property>
-		<name>dfs.journalnode.edits.dir</name>
-		<value>${hadoop.tmp.dir}/JournalNode_data</value>
-	</property>
+    <!-- nn2的RPC通信地址 -->
+    <property>
+        <name>dfs.namenode.rpc-address.mycluster.liming_zhao02</name>
+        <value>192.168.186.150:8020</value>
+    </property>
 
-	<!-- 开启NameNode失败自动切换 -->
-	<property>
-		<name>dfs.ha.automatic-failover.enabled</name>
-		<value>true</value>
-	</property>
+    <!-- nn2的http通信地址 -->
+    <property>
+        <name>dfs.namenode.http-address.mycluster.liming_zhao02</name>
+        <value>192.168.186.150:9870</value>
+    </property>
 
-	<!-- 指定该集群出故障时，哪个实现类负责执行故障切换 -->
-	<property>
-	  <name>dfs.client.failover.proxy.provider.mycluster</name>
-	  <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
-	</property>
+    <!-- 指定NameNode的edits元数据在JournalNode上的存放位置 -->
+    <property>
+        <name>dfs.namenode.shared.edits.dir</name>
+        <value>qjournal://192.168.186.140:8485;192.168.186.150:8485;/mycluster</value>
+    </property>
 
-		<!-- 配置隔离机制方法-->
-	<property>
-		<name>dfs.ha.fencing.methods</name>
-		<value>
-			sshfence
-			shell(/bin/true)
-		</value>
-        </property>
+    <!-- 指定JournalNode在本地磁盘存放数据的位置 -->
+    <property>
+        <name>dfs.journalnode.edits.dir</name>
+        <value>${hadoop.tmp.dir}/JournalNode_data</value>
+    </property>
 
-	<!-- 使用sshfence隔离机制时需要ssh免登陆 -->
-	<property>
-      <name>dfs.ha.fencing.ssh.private-key-files</name>
-      <value>/root/.ssh/id_rsa</value>
-    </property>	
-	
-	<!-- 配置sshfence隔离机制超时时间 -->
-	<property>
-		<name>dfs.ha.fencing.ssh.connect-timeout</name>
-		<value>30000</value>
-	</property>
+    <!-- 开启NameNode失败自动切换 -->
+    <property>
+        <name>dfs.ha.automatic-failover.enabled</name>
+        <value>true</value>
+    </property>
 
-	<!-- =============================================== HA 配置 ============================================ -->
+    <!-- 指定该集群出故障时，哪个实现类负责执行故障切换 -->
+    <property>
+        <name>dfs.client.failover.proxy.provider.mycluster</name>
+        <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+    </property>
+
+    <!-- 配置隔离机制方法-->
+    <property>
+        <name>dfs.ha.fencing.methods</name>
+        <value>
+            sshfence
+            shell(/bin/true)
+        </value>
+    </property>
+
+    <!-- 使用sshfence隔离机制时需要ssh免登陆 -->
+    <property>
+        <name>dfs.ha.fencing.ssh.private-key-files</name>
+        <value>/root/.ssh/id_rsa</value>
+    </property>
+
+    <!-- 配置sshfence隔离机制超时时间 -->
+    <property>
+        <name>dfs.ha.fencing.ssh.connect-timeout</name>
+        <value>30000</value>
+    </property>
+
+    <!-- =============================================== HA 配置 ============================================ -->
 
 </configuration>

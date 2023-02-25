@@ -1,14 +1,25 @@
 <configuration>
-	<property>
-		<name>fs.defaultFS</name>
-		<value>liming04</value>
-	</property>
-	<property>
-		<name>hadoop.temp.dir</name>
-		<value>/liming_zhao/hadoop/hadoop_temp_dir</value>
-	</property>
-	<property>
-		<name>hadoop.httpstaticuser.name</name>
-		<value>root</value>
-	</property>
+    <!--  hdfs 分布式平台中 name node 的地址，如果指定了该选型，代表选择了分布式搭建	-->
+    <property>
+        <name>fs.defaultFS</name>
+        <value>liming04</value>
+    </property>
+
+    <!--  hdfs 中用于 name node 存储元数据的临时文件目录地址	-->
+    <property>
+        <name>hadoop.temp.dir</name>
+        <value>/liming_zhao/hadoop/hadoop_temp_dir</value>
+    </property>
+
+    <!--  在 hdfs 的webUI 中访问时使用的身份,如果不想要指定该选项 可以指定 dfs.permissions.enabled 为false 确保webUI的正常使用	-->
+    <property>
+        <name>hadoop.http.staticuser.user</name>
+        <value>root</value>
+    </property>
+
+    <!--  在进行webUI的使用的时候 会有一层权限校验,如果这里设置为false 权限校验将会停用 与 静态用户进行二选一	-->
+    <property>
+        <name>dfs.permissions.enabled</name>
+        <value>false</value>
+    </property>
 </configuration>

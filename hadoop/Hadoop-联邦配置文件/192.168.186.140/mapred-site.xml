@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
-<!--
+<?xml version="1.0"?><?xml-stylesheet type="text/xsl" href="configuration.xsl"?><!--
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
@@ -17,34 +15,34 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-  <!-- 指定分布式计算使用的模式是yarn  local是本地模式 -->
-  <property>
-    <name>mapreduce.framework.name</name>
-    <value>yarn</value>
-  </property>
+    <!-- 指定分布式计算使用的模式是yarn  local是本地模式 -->
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
 
-  <!--Map App Master环境变量-->
-  <property>
-    <name>yarn.app.mapreduce.am.env</name>
-    <value>HADOOP_MAPRED_HOME=${HADOOP_HOME}</value>
-  </property>
+    <!--Map App Master环境变量-->
+    <property>
+        <name>yarn.app.mapreduce.am.env</name>
+        <value>HADOOP_MAPRED_HOME=${HADOOP_HOME}</value>
+    </property>
 
-  <!--MR MapTask环境变量-->
-  <property>
-    <name>mapreduce.map.env</name>
-    <value>HADOOP_MAPRED_HOME=${HADOOP_HOME}</value>
-  </property>
+    <!--MR MapTask环境变量-->
+    <property>
+        <name>mapreduce.map.env</name>
+        <value>HADOOP_MAPRED_HOME=${HADOOP_HOME}</value>
+    </property>
 
-  <!--Map ReduceTask环境变量-->
-  <property>
-    <name>mapreduce.reduce.env</name>
-    <value>HADOOP_MAPRED_HOME=${HADOOP_HOME}</value>
-  </property>
+    <!--Map ReduceTask环境变量-->
+    <property>
+        <name>mapreduce.reduce.env</name>
+        <value>HADOOP_MAPRED_HOME=${HADOOP_HOME}</value>
+    </property>
 
-  <!-- 指定mr框架为yarn方式 -->
-  <property>
-    <name>mapreduce.framework.name</name>
-    <value>yarn</value>
-  </property>
+    <!-- 指定mr框架为yarn方式 -->
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
 
 </configuration>

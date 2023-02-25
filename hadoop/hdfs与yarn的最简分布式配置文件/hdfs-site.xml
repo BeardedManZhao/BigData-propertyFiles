@@ -1,6 +1,8 @@
 <configuration>
-	<property>
-		<name>dfs.secondary.http-address</name>
-		<value>liming04:9686</value>
-	</property>
+
+    <!--  副 name node 的运行地址,用于帮助主节点进行元数据合并的服务	-->
+    <property>
+        <name>dfs.secondary.http-address</name>
+        <value>liming04:9686</value>
+    </property>
 </configuration>

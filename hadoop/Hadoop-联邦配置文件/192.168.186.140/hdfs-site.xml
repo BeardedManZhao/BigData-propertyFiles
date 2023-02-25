@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
-<!--
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="configuration.xsl"?><!--
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
@@ -16,109 +14,109 @@
 
 <!-- Put site-specific property overrides in this file. -->
 <configuration>
-	<property>
-		<name>dfs.datanode.data.dir</name>
-		<value>
-			[DISK]file://${hadoop.tmp.dir}/datanode/disk,
-			[ARCHIVE]file://${hadoop.tmp.dir}/datanode/archive,
-			[SSD]file://${hadoop.tmp.dir}/datanode/SSD,
-			[RAM_DISK]file://${hadoop.tmp.dir}/datanode/RAM
-		</value>
-	</property>
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>
+            [DISK]file://${hadoop.tmp.dir}/datanode/disk,
+            [ARCHIVE]file://${hadoop.tmp.dir}/datanode/archive,
+            [SSD]file://${hadoop.tmp.dir}/datanode/SSD,
+            [RAM_DISK]file://${hadoop.tmp.dir}/datanode/RAM
+        </value>
+    </property>
 
-	<!-- 配置ram存储策略开启状态  -->
-	<property>
-		<name>dfs.storage.policy.enabled</name>
-		<value>true</value>
-	</property>
+    <!-- 配置ram存储策略开启状态  -->
+    <property>
+        <name>dfs.storage.policy.enabled</name>
+        <value>true</value>
+    </property>
 
-	<!-- 配置ram存储数据节点的最大缓存量，单位字节B  -->
-	<property>
-		<name>dfs.datanode.max.locked.memory</name>
-		<value>1024</value>
-	</property>
+    <!-- 配置ram存储数据节点的最大缓存量，单位字节B  -->
+    <property>
+        <name>dfs.datanode.max.locked.memory</name>
+        <value>1024</value>
+    </property>
 
-	<property>
-		<name>dfs.replication</name>
-		<value>1</value>
-	</property>
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
 
-	<property>
-		<name>dfs.permissions.enabled</name>
-		<value>false</value>
-	</property>
+    <property>
+        <name>dfs.permissions.enabled</name>
+        <value>false</value>
+    </property>
 
-	<!-- 打开短路本地读取功能 -->
-	<property>
-		<name>dfs.client.read.shortcircuit</name>
-		<value>true</value>
-	</property>
+    <!-- 打开短路本地读取功能 -->
+    <property>
+        <name>dfs.client.read.shortcircuit</name>
+        <value>true</value>
+    </property>
 
-	<!-- 设置短路读取需要的进程沟通空间 -->
-	<property>
-		<name>dfs.domain.socket.path</name>
-		<value>/liming_zhao/hadoop/sokect_path/dn_sokect</value>
-	</property>
+    <!-- 设置短路读取需要的进程沟通空间 -->
+    <property>
+        <name>dfs.domain.socket.path</name>
+        <value>/liming_zhao/hadoop/sokect_path/dn_sokect</value>
+    </property>
 
-	<!-- 设置退役节点列表 -->
-	<property>
-		<name>dfs.hosts.exclude</name>
-		<value>/liming_zhao/hadoop/END_HOSTS</value>
-	</property>
-	<!-- ================================================== 联邦配置 ============================================== -->
-	<!--指定hdfs的nameservice为NameSpace01 和 NameSpace02，需要和core-site.xml中的保持一致 -->
-	<property>
-		<name>dfs.nameservices</name>
-		<value>NameSpace01,NameSpace02</value>
-	</property>
-	<!-- NameSpace01的secondaryNameNode的地址 -->
+    <!-- 设置退役节点列表 -->
+    <property>
+        <name>dfs.hosts.exclude</name>
+        <value>/liming_zhao/hadoop/END_HOSTS</value>
+    </property>
+    <!-- ================================================== 联邦配置 ============================================== -->
+    <!--指定hdfs的nameservice为NameSpace01 和 NameSpace02，需要和core-site.xml中的保持一致 -->
+    <property>
+        <name>dfs.nameservices</name>
+        <value>NameSpace01,NameSpace02</value>
+    </property>
+    <!-- NameSpace01的secondaryNameNode的地址 -->
     <property>
         <name>dfs.namenode.secondary.http-address.NameSpace01</name>
-    	<value>192.168.186.140:50090</value>
+        <value>192.168.186.140:50090</value>
     </property>
-	<!-- NameSpace02的secondaryNameNode的地址 -->
+    <!-- NameSpace02的secondaryNameNode的地址 -->
     <property>
-      	<name>dfs.namenode.secondary.http-address.NameSpace02</name>
+        <name>dfs.namenode.secondary.http-address.NameSpace02</name>
         <value>192.168.186.150:50090</value>
     </property>
-	
-	<!-- 配置第一个名字服务的集群信息 -->
-			<!-- 指定NameSpace01中有哪些主备服务器 我只配置了一个 -->
-			<property>
-				<name>dfs.ha.namenodes.NameSpace01</name>
-				<value>NameNode_zhao01</value>
-			</property>
 
-			<!-- NameSpace01的其中那台主机的RPC通信地址 -->
-			<property>
-				<name>dfs.namenode.rpc-address.NameSpace01.NameNode_zhao01</name>
-				<value>192.168.186.140:8020</value>
-			</property>
-			<!-- NameSpace01的其中那台主机的Http通信地址 -->
-			<property>
-				<name>dfs.namenode.http-address.NameSpace01.NameNode_zhao01</name>
-				<value>192.168.186.140:9870</value>
-			</property>
+    <!-- 配置第一个名字服务的集群信息 -->
+    <!-- 指定NameSpace01中有哪些主备服务器 我只配置了一个 -->
+    <property>
+        <name>dfs.ha.namenodes.NameSpace01</name>
+        <value>NameNode_zhao01</value>
+    </property>
 
-
-	<!-- 配置第二个名字服务的集群信息 -->
-			<!-- 指定NameSpace02中有哪些主备服务器 我只配置了一个 -->
-			<property>
-				<name>dfs.ha.namenodes.NameSpace02</name>
-				<value>NameNode_zhao02</value>
-			</property>
-
-			<!-- NameSpace01的其中那台主机的RPC通信地址 -->
-			<property>
-				<name>dfs.namenode.rpc-address.NameSpace02.NameNode_zhao02</name>
-				<value>192.168.186.150:8020</value>
-			</property>
-			<!-- NameSpace01的其中那台主机的Http通信地址 -->
-			<property>
-				<name>dfs.namenode.http-address.NameSpace02.NameNode_zhao02</name>
-				<value>192.168.186.150:9870</value>
-			</property>
+    <!-- NameSpace01的其中那台主机的RPC通信地址 -->
+    <property>
+        <name>dfs.namenode.rpc-address.NameSpace01.NameNode_zhao01</name>
+        <value>192.168.186.140:8020</value>
+    </property>
+    <!-- NameSpace01的其中那台主机的Http通信地址 -->
+    <property>
+        <name>dfs.namenode.http-address.NameSpace01.NameNode_zhao01</name>
+        <value>192.168.186.140:9870</value>
+    </property>
 
 
-	<!-- ================================================== 联邦配置 ============================================== -->
+    <!-- 配置第二个名字服务的集群信息 -->
+    <!-- 指定NameSpace02中有哪些主备服务器 我只配置了一个 -->
+    <property>
+        <name>dfs.ha.namenodes.NameSpace02</name>
+        <value>NameNode_zhao02</value>
+    </property>
+
+    <!-- NameSpace01的其中那台主机的RPC通信地址 -->
+    <property>
+        <name>dfs.namenode.rpc-address.NameSpace02.NameNode_zhao02</name>
+        <value>192.168.186.150:8020</value>
+    </property>
+    <!-- NameSpace01的其中那台主机的Http通信地址 -->
+    <property>
+        <name>dfs.namenode.http-address.NameSpace02.NameNode_zhao02</name>
+        <value>192.168.186.150:9870</value>
+    </property>
+
+
+    <!-- ================================================== 联邦配置 ============================================== -->
 </configuration>
