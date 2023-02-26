@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- 配置有关Hive系统结构的一些设置 -->
+<configuration>
+
+    <!-- 存储元数据mysql相关配置 注意IP地址，我们使用的是liming05服务器 -->
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:mysql://192.168.0.150:3306/hive</value>
+    </property>
+
+    <!-- 数据库连接驱动类路径  -->
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>com.mysql.cj.jdbc.Driver</value>
+    </property>
+    <!-- 操作hive元数据库的用户名称与密码配置  -->
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value>hive</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>Hive@12341234</value>
+    </property>
+</configuration>
