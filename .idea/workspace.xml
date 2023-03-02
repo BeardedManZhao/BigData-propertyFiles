@@ -13,6 +13,9 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -60,6 +63,8 @@
       <workItem from="1677332817247" duration="603000" />
       <workItem from="1677373387601" duration="164000" />
       <workItem from="1677402859963" duration="82000" />
+      <workItem from="1677748355522" duration="25000" />
+      <workItem from="1677757446478" duration="52000" />
     </task>
     <servers />
   </component>

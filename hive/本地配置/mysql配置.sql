@@ -1,17 +1,19 @@
 #
-apt-get
+apt-
+get
 update
     # apt install mysql-server
     # /etc/init.d/mysql
-start # 启动MySQL
+    start
+# 启动MySQL
 
-    # 创建好hive的元数据库
+# 创建好hive的元数据库
 create
-database if not exists hive;
+    database if not exists hive;
 #
 创建一个用户hive 指定其密码为hive1234
 CREATE
-USER 'hive'@'%' IDENTIFIED BY 'Hive@12341234';
+    USER 'hive'@'%' IDENTIFIED BY 'Hive@12341234';
 #
 赋予该用户针对 hive 库中表的所有权限
 grant all on hive.* to 'hive'@'%';
