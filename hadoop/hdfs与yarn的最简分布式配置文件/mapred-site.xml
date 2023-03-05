@@ -17,9 +17,9 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-	<!-- MapReduce 运行所需的资源调度框架名称，这里指定其为yarn  -->
-	<property>
-		<name>mapreduce.framework.name</name>
-		<value>yarn</value>
-	</property>
+    <!-- MapReduce 运行所需的资源调度框架名称，这里指定其为yarn  -->
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
 </configuration>

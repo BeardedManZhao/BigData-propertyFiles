@@ -7,7 +7,7 @@
 
     <!--  hdfs 中用于 name node 存储元数据的临时文件目录地址	-->
     <property>
-        <name>hadoop.temp.dir</name>
+        <name>hadoop.tmp.dir</name>
         <value>/liming_zhao/hadoop/hadoop_temp_dir</value>
     </property>
 
