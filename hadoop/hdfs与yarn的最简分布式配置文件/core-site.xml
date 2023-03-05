@@ -2,7 +2,7 @@
     <!--  hdfs 分布式平台中 name node 的地址，如果指定了该选型，代表选择了分布式搭建	-->
     <property>
         <name>fs.defaultFS</name>
-        <value>liming04</value>
+        <value>hdfs://liming04:8020</value>
     </property>
 
     <!--  hdfs 中用于 name node 存储元数据的临时文件目录地址	-->

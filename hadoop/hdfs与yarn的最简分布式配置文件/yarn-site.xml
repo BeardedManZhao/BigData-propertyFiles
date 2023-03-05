@@ -4,4 +4,10 @@
         <name>yarn.resourcemanager.hostname</name>
         <value>192.168.0.140</value>
     </property>
+
+    <!-- yarn 集群获取到数据使用的模式，这里配置Shuffle -->
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
 </configuration>
