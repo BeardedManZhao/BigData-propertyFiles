@@ -10,4 +10,16 @@
         <name>yarn.nodemanager.aux-services</name>
         <value>mapreduce_shuffle</value>
     </property>
+
+    <!-- 配置是否启动物理内存的检测 该项目是可选项，配置了该项，将不会在运行Job的时候检查物理内存是否足够 -->
+    <property>
+        <name>yarn.nodemanager.pmem-check-enabled</name>
+        <value>false</value>
+    </property>
+
+    <!-- 配置是否启用虚拟内存的检测 该项目是可选项，配置了该项，将不会在运行Job的时候检查虚拟内存是否足够 -->
+    <property>
+        <name>yarn.nodemanager.vmem-check-enabled</name>
+        <value>false</value>
+    </property>
 </configuration>
