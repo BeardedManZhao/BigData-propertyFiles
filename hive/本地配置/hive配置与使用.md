@@ -26,4 +26,28 @@ insert overwrite directory "/out/res1"
     row format delimited fields terminated by ','
     # 指定保存数据的查询sql，会将sql查询结果输出
     select * from user_table;
+    
+# 创建一张表，指定 sex 为分区字段
+create table zhao(
+    id int,
+    name string
+)
+partitioned by (sex string)
+row format delimited
+fields terminated by ',';
+
+# 开启动态分区，默认是false
+set hive.exec.dynamic.partition=true;
+# 开启允许所有分区都是动态的，否则必须要有静态分区才能使用。
+set hive.exec.dynamic.partition.mode=nostrick;
+
+# 将一份数据集加载到表中
+load data inpath 'hdfs://liming141/test.txt'
+into table zhao partition (sex);
+
+# 再添加一行数据
+insert into zhao values (10, 'test', 'M');
+
+# 查看分区数据
+show partitions zhao;
 ```
