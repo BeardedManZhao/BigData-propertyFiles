@@ -41,9 +41,9 @@ set hive.exec.dynamic.partition=true;
 # 开启允许所有分区都是动态的，否则必须要有静态分区才能使用。
 set hive.exec.dynamic.partition.mode=nostrick;
 
-# 将一份数据集加载到表中
-load data inpath 'hdfs://liming141/test.txt'
-into table zhao partition (sex);
+# 将一份数据集加载到表中 在3.x版本中可以不指定分区字段，使用动态分区的方式将表加载进来
+# 注意 该操作的动态分区是将数据文件中的最后一列作为分区字段！！！！
+load data inpath "hdfs://liming141/test.txt" into table zhao;
 
 # 再添加一行数据
 insert into zhao values (10, 'test', 'M');
