@@ -116,7 +116,10 @@
         <name>dfs.namenode.http-address.NameSpace02.NameNode_zhao02</name>
         <value>192.168.186.150:9870</value>
     </property>
-
+    <property>
+        <name>dfs.client.block.write.replace-datanode-on-failure.policy</name>
+        <value>NEVER</value>
+    </property>
 
     <!-- ================================================== 联邦配置 ============================================== -->
 </configuration>

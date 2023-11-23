@@ -5,4 +5,9 @@
         <name>dfs.namenode.secondary.http-address</name>
         <value>liming04:9686</value>
     </property>
+
+    <property>
+        <name>dfs.client.block.write.replace-datanode-on-failure.policy</name>
+        <value>NEVER</value>
+    </property>
 </configuration>

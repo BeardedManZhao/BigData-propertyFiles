@@ -17,7 +17,6 @@
         <name>javax.jdo.option.ConnectionUserName</name>
         <value>hive</value>
     </property>
-
     <property>
         <name>javax.jdo.option.ConnectionPassword</name>
         <value>Hive@12341234</value>

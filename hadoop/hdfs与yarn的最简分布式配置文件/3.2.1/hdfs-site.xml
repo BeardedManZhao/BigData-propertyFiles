@@ -21,4 +21,9 @@
 		<name>dfs.namenode.secondary.http-address</name>
 		<value>http://liming141:9876</value>
 	</property>
+
+	<property>
+		<name>dfs.client.block.write.replace-datanode-on-failure.policy</name>
+		<value>NEVER</value>
+	</property>
 </configuration>

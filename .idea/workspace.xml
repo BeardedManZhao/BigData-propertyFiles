@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7ec5b02-7cb6-4dea-aa89-1f38391c1e72" name="变更" comment="" />
+    <list default="true" id="b7ec5b02-7cb6-4dea-aa89-1f38391c1e72" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop/Hadoop-联邦配置文件/192.168.186.140/hdfs-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/Hadoop-联邦配置文件/192.168.186.140/hdfs-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop/Hadoop-联邦配置文件/192.168.186.150/hdfs-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/Hadoop-联邦配置文件/192.168.186.150/hdfs-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/2.8.x/hdfs-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/2.8.x/hdfs-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/3.2.1/hdfs-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/3.2.1/hdfs-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hive/本地配置/hive-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hive/本地配置/hive-site.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="E:/RunTime/Android-sdk-windows" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
@@ -81,6 +88,8 @@
       <workItem from="1678844098139" duration="54000" />
       <workItem from="1678928679479" duration="68000" />
       <workItem from="1678928800204" duration="27000" />
+      <workItem from="1700737802717" duration="17000" />
+      <workItem from="1700737838279" duration="50000" />
     </task>
     <servers />
   </component>
