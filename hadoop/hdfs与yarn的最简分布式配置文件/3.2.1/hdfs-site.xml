@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
-<!--
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="configuration.xsl"?><!--
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
@@ -17,13 +15,13 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-	<property>
-		<name>dfs.namenode.secondary.http-address</name>
-		<value>http://liming141:9876</value>
-	</property>
+    <property>
+        <name>dfs.namenode.secondary.http-address</name>
+        <value>http://liming141:9876</value>
+    </property>
 
-	<property>
-		<name>dfs.client.block.write.replace-datanode-on-failure.policy</name>
-		<value>NEVER</value>
-	</property>
+    <property>
+        <name>dfs.client.block.write.replace-datanode-on-failure.policy</name>
+        <value>NEVER</value>
+    </property>
 </configuration>

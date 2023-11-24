@@ -21,4 +21,9 @@
         <name>javax.jdo.option.ConnectionPassword</name>
         <value>Hive@12341234</value>
     </property>
+
+    <property>
+        <name>hive.metastore.uris</name>
+        <value>thrift://192.168.0.141:9083</value>
+    </property>
 </configuration>
