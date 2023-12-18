@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7ec5b02-7cb6-4dea-aa89-1f38391c1e72" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/2.8.x/mapred-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/2.8.x/mapred-site.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/3.2.1/core-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/3.2.1/core-site.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/3.2.1/hdfs-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/3.2.1/hdfs-site.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/3.2.1/mapred-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/3.2.1/mapred-site.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/3.2.1/yarn-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/hdfs与yarn的最简分布式配置文件/3.2.1/yarn-site.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hive/本地配置/hive-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hive/本地配置/hive-site.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hive/本地配置/mysql配置.sql" beforeDir="false" afterPath="$PROJECT_DIR$/hive/本地配置/mysql配置.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +87,8 @@
       <workItem from="1700737802717" duration="17000" />
       <workItem from="1700737838279" duration="50000" />
       <workItem from="1700837390099" duration="40000" />
+      <workItem from="1702526788116" duration="1188000" />
+      <workItem from="1702530111327" duration="22000" />
     </task>
     <servers />
   </component>
